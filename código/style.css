@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+                        /* ----------------------- NAV-BAR -----------------------------*/
+
+header {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 101%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 9%;
+    border: 1px solid rgba(255, 255, 255, 0.247);
+    background: rgb(17, 17, 26) 100%;
+    z-index: 999991;
+    transition: all .55s ease;
+}
+
+
+.navlist{
+    display: flex;
+    margin-left: 100px;
+}
+
+.navlist a{
+    color: rgba(255, 255, 255, 0.479);
+    margin-left:80px;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+    
+}
+
+.navlist .atual a{
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.navlist a:hover{
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+                    /* -----------------------LOGIN-----------------------------*/
+
+
+header .login {
+    width: 140px;
+    height: 40px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    background: #100720;
+    transition: 0.1s;
+}
+
+header .login::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+    filter: blur(15px);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+header .login:active {
+    transform: scale(0.9) rotate(3deg);
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+    transition: 0.5s;
+}
+
+                            /* ----------------------- PÁGINA PRINCIPAL -----------------------------*/
+
+.home {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(133, 87, 243, 0.877) 0%, rgba(112, 64, 223, 0.849) 50%, rgb(8, 8, 19) 100%);
+    height: 50vh;
+    width: 100%;
+    gap: 2rem;
+    margin-top: 80px;
+}
+
+.carrossel h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    position: relative;
+    top: 130px;
+}
+
+.planos {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.952) 0%, rgba(0, 0, 1, 0.918) 50%, rgba(0, 0, 6, 0.904) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.185);
+    z-index: 99999;
+}
+
+                            /* -----------------------LAYOUT PLANOS-----------------------------*/
+
+.layout {
+    width: 98vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    bottom: 30px;
+}
+
+.planos .layout-plano{
+    background: rgb(19, 19, 22);
+    width: 19%;
+    height: 80vh;
+    border: 1px solid rgba(255, 255, 255, 0.103);
+    transition: 1s ease-in;
+}
+
+.planos .layout-plano:hover {
+    transition: .55s ease-out;
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgb(121, 4, 255);
+}
+
+.layout img {
+    position: relative;
+    margin-left: 125px;
+    top: 50px;
+}
+
+.layout em{
+    font-size: 15px;
+}
+
+.layout h2{
+    position: relative;
+    text-align: center;
+    top: 100px;
+    font-size: 35px;
+    color: rgb(167, 15, 255);
+}
+
+.layout h3{
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.layout h4{
+    position: relative;
+    text-align: center;
+    top: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.layout h5{
+    margin-top: 50px ;
+    text-align: center;
+    color: white;
+}
+
+.layout p{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    color: rgb(107, 104, 104);
+}
+
+.layout-plano .plan-button {
+    position: relative;
+    border: 1px solid rgb(117, 109, 109);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(167, 15, 255);
+    background: rgb(32, 32, 32) 100.2%;
+    width: 150px;
+    height: 50px;
+    left: 80px;
+    top: 170px;
+    cursor: pointer;
+    transition: .32s ease-out;
+}
+
+.layout-plano .plan-button a{
+    position: relative;
+    padding: 14px 40px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.layout-plano .plan-button:hover{
+    transition: .35s ease-out;
+    transform: translateY(-5px);
+    /* box-shadow: 0 0 20px rgb(121, 4, 255); */
+}
+
+                                /* -----------------------HOME 2-----------------------------*/
+
+.home-2{
+    width: 100%;
+    height: 95vh;
+    background: rgb(19, 19, 22);
+}
+
+.home-2 h1{
+    position: relative;
+    text-align: center;
+    top: 10%;
+    color: white;
+    font-weight: 100;
+}
+
+.home-2 strong {
+    color: rgb(160, 60, 226);
+}
+
+.home-2 p{
+    position: relative;
+    text-align: center;
+    top: 15%;
+    color: rgb(143, 131, 131);
+}
+
+.recurso {
+    width: 98vw;
+    height: 80vh;
+    display: flex;
+}
+
+.recurso h2 {
+    position: relative;
+    color: white;
+    text-align: center;
+    top: 30%;
+}
+
+.recurso h4 {
+    position: relative;
+    color: white;
+    text-align: center;
+    top: 40%;
+    font-weight: 30;
+    line-height: 2;
+}
+
+.recurso-left {
+    position: relative;
+    width: 40%;
+    height: 65%;
+    border: 2px solid rgb(66, 2, 126);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(66, 2, 126);
+    background: linear-gradient(0deg, rgba(58, 3, 146, 0.048) 0%, rgba(139, 93, 182, 0.137) 50%, rgba(182, 92, 241, 0.486) 100%);
+    top: 25%;
+    left: 8%;
+}
+
+.recurso-left:hover{
+    transition: .35s ease-out;
+    transform: translateY(-5px);
+}
+
+.recurso-right {
+    position: relative;
+    width: 40%;
+    height: 65%;
+    border: 2px solid rgb(66, 2, 126);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(66, 2, 126);
+    background: linear-gradient(0deg, rgba(58, 3, 146, 0.048) 0%, rgba(139, 93, 182, 0.137) 50%, rgba(182, 92, 241, 0.486) 100%);
+    top: 25%;
+    left: 12%;
+}
+
+.recurso-right:hover{
+    transition: .35s ease-out;
+    transform: translateY(-5px);
+}
+
+.recursos {
+    width: 100%;
+    height: 90vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.952) 0%, rgba(0, 0, 1, 0.918) 50%, rgba(0, 0, 6, 0.904) 100%);
+}
+
+.recursos h1{
+    position: relative;
+    text-align: center;
+    top: 20px;
+    color: white;
+    font-weight: 40;
+    font-size: 30px;
+}
+
+.recursos p{
+    position: relative;
+    text-align: center;
+    top: 50px;
+    color: rgb(160, 60, 226);
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.plan-recursos {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    top: 100px;
+}
+
+.plan-recursos .recursos-box {
+    width: 40vh;
+    height: 40vh;
+    border: 1px solid rgba(255, 255, 255, 0.103);
+    border-radius: 20px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(26, 25, 25, 0.952) 0%, rgba(10, 10, 10, 0.918) 50%, rgba(16, 16, 17, 0.904) 100%);
+    transition: .55s ease-in;
+}
+
+.recursos-box:hover{
+    transition: .55s ease-out;
+    transform: translateY(-10px);
+    box-shadow: 0 0 5px rgb(83, 81, 81);
+}
+
+.plan-recursos img{
+    position: relative;
+    top: 30px;
+    left: 120px;
+}
+
+.plan-recursos h2{
+    position: relative;
+    top: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(224, 206, 206);
+}
+
+.plan-recursos h4{
+    text-align: center;
+    position: relative;
+    top: 60px;
+    padding: 10px;
+    color: rgb(184, 168, 168);
+    font-weight: 40;
+}
+
+.perguntas-wrapper {
+    width: 100%;
+    height: 80vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.952) 0%, rgba(0, 0, 1, 0.918) 50%, rgba(0, 0, 6, 0.904) 100%);
+}
+
+.perguntas-wrapper h1{
+    text-align: center;
+    font-size: 1.5em;
+    color: #6B7C93;
+    text-transform: uppercase;
+    position: relative;
+    top: 50px;
+}
+
+.faq-item {
+    width: 70%;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    position: relative;
+    left: 200px;
+    top: 80px;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgb(160, 60, 226);
+    cursor: pointer;
+}
+
+.perguntas-wrapper .question {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.4em;
+    color: blueviolet;
+}
+
+.question::after{
+    content: '+';
+    float: right;
+    transition: transform .3s ease;
+}
+
+.perguntas-wrapper .answer {
+    padding: 10px;
+    color: white;
+    line-height: 1.4em;
+    display: none;
+}
+
+.home-end{
+    width: 100%;
+    height: 72vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.952) 0%, rgba(0, 0, 1, 0.918) 50%, rgba(0, 0, 6, 0.904) 100%);
+}
+
+.suporte {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    top: 60px;
+    right: 35px;
+}
+
+.suporte a{
+    position: relative;
+    top: 20px;
+    text-align: center;
+    padding: 37px 100%;
+    text-decoration: none;
+}
+
+.suporte .planbox-1{
+    width: 25%;
+    height: 25vh;
+    border: 1px solid rgb(160, 60, 226);
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgb(160, 60, 226);
+}
+
+.suporte .planbox-1:hover{
+    transition: .55s ease-out;
+    transform: translateY(-5px);
+    box-shadow: 0 0 4px rgb(88, 84, 84);
+}
+
+.suporte .planbox-2{
+    width: 25%;
+    height: 25vh;
+    border: 1px solid rgb(160, 60, 226);
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgb(160, 60, 226);
+}
+
+.suporte .planbox-2:hover{
+    transition: .55s ease-out;
+    transform: translateY(-5px);
+    box-shadow: 0 0 4px rgb(88, 84, 84);
+}
+
+.suporte .planbox-3{
+    width: 25%;
+    height: 25vh;
+    border: 1px solid rgb(160, 60, 226);
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgb(160, 60, 226);
+}
+
+.suporte .planbox-3:hover{
+    transition: .55s ease-out;
+    transform: translateY(-5px);
+    box-shadow: 0 0 4px rgb(88, 84, 84);
+}
+
+.suporte h3{
+    position: relative;
+    bottom: 15px;
+    color: rgb(160, 60, 226);
+    font-size: 25px;
+}
+
+.suporte p{
+    position: relative;
+    bottom: 15px;
+    color: white;
+}
+
+.suporte i{
+    font-size: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    top: 10px;
+    color: rgb(160, 60, 226);
+}
+
+.rodape {
+    position: relative;
+    top: 180px;
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    background-color: rgb(17, 16, 16);
+}
+
+.rodape-sociais p{
+    color: rgb(199, 188, 188);
+    margin-top: 30px;
+    font-weight: 400;
+}
+
+.rodape-sociais i{
+    position: relative;
+    top: 2px;
+    font-size: 20px;
+    text-align: center; 
+}
+
+.rodape-sociais a{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(160, 60, 226);
+    border-radius: 50%;
+    background: transparent;
+    top: 30px;
+    margin: 5px;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+
+.rodape-sociais a:hover{
+    background: rgb(34, 34, 34);
+}
+
+.rodape h3{
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(160, 60, 226);
+}
+
+.rodape-servicos a{
+    color: white;
+}
+
+.rodape-servicos a:hover{
+    color: rgb(151, 146, 146);
+}
+
+.rodape-servicos i{
+    color: rgb(160, 60, 226);
+}
