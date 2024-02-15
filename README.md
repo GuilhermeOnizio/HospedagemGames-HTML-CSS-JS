@@ -16,4 +16,4 @@ No rodapé do site, você encontrará links para meu LinkedIn, onde compartilho 
 
 # :four_leaf_clover: Redes-Sociais:
 <a href="https://www.instagram.com/m.guifo01/" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
-<a href="https://www.linkedin.com/in/guilherme-onizio-b71814268/" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> <a href="https://www.tiktok.com/@devgferreira" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/-tiktok-617?style=for-the-badge&logo=tiktok" target="_blank"></a>  
+<a href="https://www.linkedin.com/in/guilherme-onizio-b71814268/" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
