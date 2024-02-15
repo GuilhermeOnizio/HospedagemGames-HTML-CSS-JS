@@ -17,3 +17,6 @@ No rodapé do site, você encontrará links para meu LinkedIn, onde compartilho 
 # :four_leaf_clover: Redes-Sociais:
 <a href="https://www.instagram.com/m.guifo01/" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
 <a href="https://www.linkedin.com/in/guilherme-onizio-b71814268/" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+
+![2024-02-15 19-56-48 (online-video-cutter com)](https://github.com/GuilhermeOnizio/HospedagemGames-HTML-CSS-JS/assets/129892786/16568f66-1551-47b9-a4e9-4d09bea57a23)
+
